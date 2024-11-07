@@ -143,12 +143,12 @@ body {
         margin-top: 40px; /* Margin atas untuk lebih ke tengah */
     }
     .hole {
-        height: 90px;
+        height: 50px;
     }
     .hole:after {
-        height: 90px;
+        height: 50px;
     }
     .mole {
-        background-size: 100%
+        background-size: 70%
     }
 }
