@@ -1,4 +1,4 @@
-html body{
+html body {
     margin: 0;
     padding: 0;
     min-width: 100%;
@@ -12,38 +12,38 @@ html {
     background-attachment: fixed; /* Ensures background stays fixed and does not repeat */
     background-position: center;
 }
-body{
-    font-family: "Sofia",sans-serif;
+body {
+    font-family: "Sofia", sans-serif;
 }
-.start{
+.start {
     text-align: center;
     margin-bottom: 0px;
 }
-.score{
+.score {
     color: #685e72;
     text-align: center;
     font-size: 4rem;
     padding: 0px;
 }
-.title{
+.title {
     text-align: center;
     font-size: 5rem;
     margin-bottom: 1px;
 }
-.game{
+.game {
     width: 800px;
     height: 400px;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
 }
-.hole{
-    flex:1 0 33%;
+.hole {
+    flex: 1 0 33%;
     overflow: hidden;
     position: relative;
 }
 
-.hole:after{
+.hole:after {
     display: block;
     background: url("dirt.svg") bottom center no-repeat;
     background-size: contain;
@@ -54,7 +54,7 @@ body{
     z-index: 2;
     bottom: -30px;
 }
-.mole{
+.mole {
     background: url("mole.svg") bottom center no-repeat;
     background-size: 30%;
     position: absolute;
@@ -64,8 +64,8 @@ body{
     transition: all 0.4s ease;
 }
 
-.hole.up .mole{
-    top:-10px
+.hole.up .mole {
+    top: -10px;
 }
 
 .button {
@@ -80,29 +80,57 @@ body{
     width: 120px;
     transition: all 0.5s;
     cursor: pointer;
-  }
-  
-  .button span {
+}
+
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  .button span:after {
+}
+
+.button span:after {
     content: '\2755';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  .button:hover span {
+}
+
+.button:hover span {
     padding-right: 25px;
-  }
-  
-  .button:hover span:after {
+}
+
+.button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    .game {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .hole {
+        flex: 1 0 48%; /* Adjusts the holes to fit better on smaller screens */
+        margin: 5px;
+    }
+
+    .score {
+        font-size: 2.5rem; /* Reduce font size for score */
+    }
+
+    .title {
+        font-size: 3.5rem; /* Reduce font size for title */
+    }
+
+    .button {
+        font-size: 20px; /* Adjust button size */
+        width: 100px; /* Adjust button width */
+        padding: 5px;
+    }
+}
