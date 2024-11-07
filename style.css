@@ -127,7 +127,7 @@ body {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 414px) {
     .title {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .score {
         font-size: 4.5rem;
@@ -139,16 +139,16 @@ body {
     .game {
         width: 100%;
         max-width: 400px;
-        height: 500px; /* Tinggi disesuaikan */
+        height: 300px; /* Tinggi disesuaikan */
         margin-top: 40px; /* Margin atas untuk lebih ke tengah */
     }
     .hole {
-        height: 130px;
+        height: 110px;
     }
     .hole:after {
         height: 90px;
     }
     .mole {
-        background-size: 50%;
+        background-size: 70%;
     }
 }
