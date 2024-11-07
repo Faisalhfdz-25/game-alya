@@ -4,10 +4,13 @@ html body{
     min-width: 100%;
     min-height: 100%;
 }
-html{
+html {
     font-size: 8px;
     background-image: url("background_nature.svg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures background stays fixed and does not repeat */
+    background-position: center;
 }
 body{
     font-family: "Sofia",sans-serif;
