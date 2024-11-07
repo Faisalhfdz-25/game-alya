@@ -139,16 +139,16 @@ body {
     .game {
         width: 100%;
         max-width: 400px;
-        height: 300px; /* Tinggi disesuaikan */
+        height: 100px; /* Tinggi disesuaikan */
         margin-top: 40px; /* Margin atas untuk lebih ke tengah */
     }
     .hole {
-        height: 110px;
+        height: 90px;
     }
     .hole:after {
         height: 90px;
     }
     .mole {
-        background-size: 70%;
+        background-size: 100%
     }
 }
