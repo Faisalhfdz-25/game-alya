@@ -5,7 +5,7 @@ html body {
     min-height: 100%;
 }
 html {
-    font-size: 10px; /* Perbesar ukuran font dasar */
+    font-size: 10px;
     background-image: url("background_nature.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,31 +24,39 @@ body {
 .score {
     color: #685e72;
     text-align: center;
-    font-size: 5rem; /* Perbesar ukuran font skor */
+    font-size: 5rem;
     padding: 0px;
 }
 
 .title {
     text-align: center;
-    font-size: 6rem; /* Perbesar ukuran font judul */
+    font-size: 6rem;
     margin-bottom: 1px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .game {
     width: 90%;
-    max-width: 600px; /* Lebih lebar untuk ponsel */
-    height: 500px; /* Tinggi diperbesar */
+    max-width: 600px;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 10px; /* Jarak antar elemen */
+    gap: 10px;
+    margin-top: 20px; /* Margin atas untuk menempatkan lebih ke tengah */
 }
 
 .hole {
-    flex: 1 0 30%; /* Lebih besar untuk setiap "hole" */
+    flex: 1 0 30%;
     overflow: hidden;
     position: relative;
-    height: 120px; /* Tinggi diperbesar */
+    height: 150px; /* Ukuran diperbesar */
 }
 
 .hole:after {
@@ -57,15 +65,15 @@ body {
     background-size: cover;
     content: '';
     width: 100%;
-    height: 90px; /* Tinggi diperbesar */
+    height: 100px; /* Tinggi diperbesar */
     position: absolute;
     z-index: 2;
-    bottom: -10px;
+    bottom: -20px;
 }
 
 .mole {
     background: url("mole.svg") bottom center no-repeat;
-    background-size: 50%; /* Ukuran mole diperbesar */
+    background-size: 60%; /* Ukuran mole diperbesar */
     position: absolute;
     top: 100%;
     width: 100%;
@@ -74,7 +82,7 @@ body {
 }
 
 .hole.up .mole {
-    top: -20px; /* Sesuaikan posisi mole */
+    top: -20px;
 }
 
 .button {
@@ -84,7 +92,7 @@ body {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 3rem; /* Perbesar ukuran font tombol */
+    font-size: 3rem;
     padding: 10px;
     width: 150px;
     transition: all 0.5s;
@@ -131,15 +139,16 @@ body {
     .game {
         width: 100%;
         max-width: 400px;
-        height: 450px;
+        height: 500px; /* Tinggi disesuaikan */
+        margin-top: 40px; /* Margin atas untuk lebih ke tengah */
     }
     .hole {
-        height: 100px;
+        height: 130px;
     }
     .hole:after {
-        height: 80px;
+        height: 90px;
     }
     .mole {
-        background-size: 45%;
+        background-size: 50%;
     }
 }
